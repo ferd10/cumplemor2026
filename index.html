@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2a0d45">
+  <title>Feliz cumpleaños, Yamileth 💜</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+  <div class="loader" id="loader">
+    <div class="loader__heart">💜</div>
+    <p>Una sorpresa para Yamileth</p>
+    <button id="enterBtn">Entrar a la sorpresa ✦</button>
+  </div>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <audio id="music" loop preload="metadata">
+    <!-- REEMPLAZA musica-bts.mp3 por tu canción o enlace directo MP3 -->
+    <source src="BTS 'FOR YOU' Official MV.mp3" type="audio/mpeg">
+  </audio>
+  <button class="music" id="musicBtn" aria-label="Activar o pausar música">♫</button>
+
+  <header class="hero" id="inicio">
+    <nav><a href="#inicio" class="logo">∞ <span>Y & A</span></a><div><a href="#historia">Nosotros</a><a href="#video">Video</a><a href="#carta">Carta</a></div></nav>
+    <div class="aurora a1"></div><div class="aurora a2"></div>
+    <div class="hero__content reveal">
+      <p class="overline">15 · AGOSTO · 2026 — UN DÍA ESPECIAL</p>
+      <h1>Feliz cumpleaños,<br><em>Yamileth Roldan</em></h1>
+      <p class="dedication">Una pequeña parte de todo lo bonito que mereces, preparada con mucho cariño por tu novio.</p>
+      <a class="button" href="#historia">Descubrir tu regalo <span>↓</span></a>
+    </div>
+    <div class="universe" aria-label="Universo de siete mascotas">
+      <div class="moon"><small>HAPPY</small><strong>BIRTHDAY</strong><span>YAMILETH</span></div>
+      <div class="doll d1">🐨</div><div class="doll d2">🐰</div><div class="doll d3">🐱</div>
+      <div class="doll d4">🐿️</div><div class="doll d5">🐥</div><div class="doll d6">🐻</div><div class="doll d7">🐶</div>
+    </div>
+    <p class="from">DE ARON MUÑOZ, PARA TI <span>♡</span></p>
+  </header>
+
+  <main>
+    <section class="story section" id="historia">
+      <div class="section__intro reveal"><p class="overline">NUESTROS RECUERDOS</p><h2>Momentos que viven<br><em>en el corazón</em></h2></div>
+      <div class="gallery">
+        <!-- Cambia estas tres rutas por sus fotografías -->
+        <figure class="photo reveal"><img src="img1.jpeg" alt="Un recuerdo especial de Yamileth y Aron" onerror="this.parentElement.classList.add('placeholder')"><figcaption>Donde comenzó nuestra aventura</figcaption></figure>
+        <figure class="photo featured reveal"><img src="img2.jpeg" alt="Yamileth sonriendo" onerror="this.parentElement.classList.add('placeholder')"><figcaption>Mi recuerdo favorito: tu sonrisa</figcaption></figure>
+        <figure class="photo reveal"><img src="img3.jpeg" alt="Otro momento especial juntos" onerror="this.parentElement.classList.add('placeholder')"><figcaption>Todo lo bonito que falta vivir</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="video-section section" id="video">
+      <div class="video-copy reveal"><p class="overline">PREPARADO ESPECIALMENTE PARA TI</p><h2>Nuestra historia<br><em>en movimiento</em></h2><p>Un recorrido por los instantes, sonrisas y recuerdos que hacen única nuestra historia.</p></div>
+      <div class="video-frame reveal">
+        <!-- Cambia video-cumpleanos.mp4 por tu archivo MP4 -->
+        <video id="birthdayVideo" controls playsinline poster="portada-video.jpg"><source src="video1.mp4" type="video/mp4">Tu navegador no admite video.</video>
+        <div class="video-placeholder"><span>▶</span><p>Coloca aquí el video de cumpleaños</p></div>
+      </div>
+    </section>
+
+    <section class="wishes section">
+      <p class="overline reveal">SIETE DESEOS PARA TU NUEVO AÑO</p>
+      <div class="wish-grid">
+        <article class="reveal">
+      <span>🐨</span>
+      <b>01</b>
+      <p>Que cada uno de tus sueños encuentre su camino.</p>
+    </article>
+
+    <article class="reveal">
+      <span>🐰</span>
+      <b>02</b>
+      <p>Que nunca te falten razones para sonreír.</p>
+    </article>
+
+    <article class="reveal">
+      <span>🐱</span>
+      <b>03</b>
+      <p>Que tu luz continúe haciendo especiales los días.</p>
+    </article>
+
+    <article class="reveal">
+      <span>🐿️</span>
+      <b>04</b>
+      <p>Que cada aventura nos regale un hermoso recuerdo.</p>
+    </article>
+
+    <article class="reveal">
+      <span>🐥</span>
+      <b>05</b>
+      <p>Que este nuevo año llegue lleno de alegrías y oportunidades.</p>
+    </article>
+
+    <article class="reveal">
+      <span>🐻</span>
+      <b>06</b>
+      <p>Que siempre estés acompañada por personas que valoren tu esencia.</p>
+    </article>
+
+    <article class="reveal">
+      <span>🐶</span>
+      <b>07</b>
+      <p>Que hoy y siempre recibas todo el cariño que mereces.</p>
+    </article>
+
+      </div>
+    </section>
+
+    <section class="letter-section section" id="carta">
+      <div class="letter-copy reveal"><p class="overline">UN MENSAJE DE ARON PARA YAMILETH</p><h2>Hay palabras que<br><em>merecen guardarse</em></h2><p>Presiona el sobre para descubrir una carta preparada especialmente para ti.</p></div>
+      <button class="envelope reveal" id="envelope" aria-expanded="false">
+        <div class="paper"><h3>Mi querida Yamileth:</h3><p>Hoy celebro tu vida y la alegría que compartes con quienes te rodean. Deseo que este nuevo año te acerque a tus sueños y esté lleno de momentos inolvidables. Gracias por permitirme acompañarte y construir recuerdos a tu lado.</p><p>Espero que esta sorpresa te recuerde lo especial que eres para mí.</p><strong>Feliz cumpleaños 💜<br>Con cariño, Aron Muñoz</strong></div>
+        <div class="envelope__front"><span>♡</span></div>
+        <small id="envelopeHint">Toca para abrir</small>
+      </button>
+    </section>
+    <section class="finale section"><p class="overline reveal">SIETE ESTRELLAS · UN SOLO DESEO</p><h2 class="reveal">Que seas muy feliz,<br><em>hoy y siempre</em></h2><button class="button reveal" id="celebrateBtn">Celebrar a Yamileth ✦</button></section>
+  </main>
+  <footer><div>∞ <span>PURPLE LOVE</span></div><p>Hecho con cariño por Aron Muñoz</p><b>YAMILETH · 2026</b></footer>
+  <div class="confetti" id="confetti" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
